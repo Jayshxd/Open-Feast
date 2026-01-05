@@ -169,7 +169,7 @@ export default function PostFoodForm({ onPostSuccess }: { onPostSuccess: () => v
                                 <span className="font-medium">{file.name}</span>
                                 <button 
                                     type="button" 
-                                    onClick={(e) => { e.preventDefault(); setFile(null); }}
+                                    onClick={() => setFile(null)}
                                     className="ml-2 text-surface-400 hover:text-red-500 transition-colors"
                                 >
                                     <XCircle className="w-5 h-5" />
